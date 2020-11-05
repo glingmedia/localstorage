@@ -5,6 +5,7 @@ window.addEventListener('load', main);
 
 function main() {
     addEventListeners();
+    addAdvancedEventListeners();
 }
 
 function addEventListeners() {

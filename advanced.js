@@ -1,10 +1,4 @@
-window.addEventListener('load', start);
-
-function start() {
-    addEventListeners();
-}
-
-function addEventListeners() {
+function addAdvancedEventListeners() {
     const saveButton = document.getElementById('saveObject');
     const showButton = document.getElementById('showObject');
 
