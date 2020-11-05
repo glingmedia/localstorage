@@ -26,6 +26,13 @@ function printRandomNumberFromLS() {
     const placeholder = document.getElementById('placeholder');
     placeholder.append(randomNumber + ', ');
 
-    //ta bort?
+    //samma?
     //placeholder.innerText = randomNumber;
+}
+
+function clearRandomNumberFromLS() {
+    localStorage.removeItem('randomNumber');
+
+    const placeholder = document.getElementById('placeholder');
+    placeholder.innerText = "";
 }
