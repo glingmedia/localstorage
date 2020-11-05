@@ -1,4 +1,7 @@
-window.onload = main;
+window.addEventListener('load', main);
+
+// let x = 3
+// console.log(main.js, x)
 
 function main() {
     addEventListeners();
