@@ -23,11 +23,12 @@ function saveRandomNumberToLS() {
 
 function printRandomNumberFromLS() {
     const randomNumber = localStorage.getItem('randomNumber');
-    const placeholder = document.getElementById('placeholder');
-    placeholder.append(randomNumber + ', ');
 
-    //samma?
-    //placeholder.innerText = randomNumber;
+    const placeholder = document.getElementById('placeholder');
+    placeholder.innerText = randomNumber;
+    
+    //samma? printas dock flera gånger!
+    //placeholder.append(randomNumber + ', ');
 }
 
 function clearRandomNumberFromLS() {
