@@ -1,7 +1,7 @@
 window.onload = main;
 
 function main() {
-    console.log('its working..')
+    addEventListeners();
 }
 
 function addEventListeners() {
