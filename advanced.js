@@ -21,12 +21,20 @@ function savePersonToLS() {
         likesBeer: true,
         friends: ["Timmy", "Thaksin", "Daniel"]
     };
-
-    localStorage.setItem('person', person);
+    // En strängifiering. Viktig kunskap
+    const personAsString = JSON.stringify(person);
+    localStorage.setItem('person', personAsString);
 }
 
 function showPersonFromLS() {
-    console.log('show')
+    const personAsString = localStorage.getItem('person');
+    const person = JSON.parse(personAsString);
+
+    const placeholder = document.getElementById('placeholderObject');
+    //OBS
+    //placeholder.innerText = personAsString;
+    placeholder.innerText = person.age;
+    //console.log(personAsString)
 }
 
 // console.log('advanced.js');
